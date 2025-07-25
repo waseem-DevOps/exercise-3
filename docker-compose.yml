@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  javaapp:
+    build: .
+    container_name: simple-java-app
+    image: simple-java-app:latest
+    command: ["java", "Main"]
