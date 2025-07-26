@@ -1,9 +1,33 @@
-# Java CI/CD Demo Application - Docker & Kubernetes Deployment
+# Java CI/CD Application - Docker & Kubernetes Deployment
 
 This repository contains a simple Java application that prints a message to the console.  
 It has been containerized using Docker, orchestrated using Docker Compose, and prepared for deployment to a Kubernetes cluster.
 
 ---
+
+##  Project Overview
+
+We are using a simple Java application (`App.java`) that prints text to the console. The goal is to turn this app into a production-ready container and deploy it to Kubernetes for scalability and environment management.
+
+---
+
+##  Architecture
+
+
+                    +---------------------+
+                    |  Java Application   |
+                    +----------+----------+
+                               |
+                      Containerized with Docker
+                               |
+                       +-------v--------+
+                       | Docker Compose |
+                       +-------+--------+
+                               |
+                 +-------------v-----------------+
+                 |     Kubernetes Cluster        |
+                 |  (Deployments, Services, etc) |
+                 +-------------------------------+
 
 ##  Run the App Using Docker
 Requirements:
