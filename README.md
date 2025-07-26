@@ -29,20 +29,19 @@ We are using a simple Java application (`App.java`) that prints text to the cons
                  |  (Deployments, Services, etc) |
                  +-------------------------------+
 
-##  Run the App Using Docker
-Requirements:
+##  how to run? 
+
+- with docker: 
+
 Docker installed
 
 Build the Docker Image:
-
 docker build -t java-cicd-app .
 
-Run the Container:
-
+Run the Container
 docker run java-cicd-app
 
-Run the App with Docker Compose:
-
+Run the App with Docker Compose
 docker-compose up --build
 
 This will build and run the Java app container using the docker-compose.yml.
